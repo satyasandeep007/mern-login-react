@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Config from '../Config';
-import {Link} from "react-router-dom";
+import { Link } from "react-router-dom";
 
 export default class welcome extends Component {
   render() {
@@ -10,25 +10,11 @@ export default class welcome extends Component {
           <div className="card card-body text-center">
             <p>Create an account or login</p>
 
-         
 
 
-            <Link to="/register" >
-            <button
-                          type="submit"
-                          className="btn btn-primary"
-                        >
-                          Register
-                        </button>
-             </Link>
-               <Link to="/login" >
-            <button
-                          type="submit"
-                          className="btn btn-primary"
-                        >
-                          Login
-                        </button>
-             </Link>
+
+            <Link to={`/register`} className="btn btn-primary btn-block mb-2" >Register </Link>
+            <Link to={`/login`} className="btn btn-secondary btn-block">Login</Link>
           </div>
         </div>
       </div>

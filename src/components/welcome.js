@@ -9,8 +9,8 @@ export default class welcome extends Component {
         <div className="col-md-6 m-auto">
           <div className="card card-body text-center">
             <p>Create an account or login</p>
-            <Link to=`${Config.hostName}/register` className="btn btn-primary btn-block mb-2" >Register </Link>
-            <Link to=`${Config.hostName}/login` className="btn btn-secondary btn-block">Login</Link>
+            <Link to={`${Config.hostName}/register`} className="btn btn-primary btn-block mb-2" >Register </Link>
+            <Link to={`${Config.hostName}/login`} className="btn btn-secondary btn-block">Login</Link>
           </div>
         </div>
       </div>

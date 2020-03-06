@@ -5,7 +5,7 @@ const dev = {
 
 // eslint-disable-next-line 
 const prod = {
-    hostName: "http://localhost:8000",
+    hostName: "http://13.233.110.16",
     cookie_expiration: 364
 };
 

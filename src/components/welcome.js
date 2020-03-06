@@ -13,7 +13,7 @@ export default class welcome extends Component {
          
 
 
-            <Link to={`${Config.hostName}/register`} >
+            <Link to="/register" >
             <button
                           type="submit"
                           className="btn btn-primary"
@@ -21,7 +21,7 @@ export default class welcome extends Component {
                           Register
                         </button>
              </Link>
-               <Link to={`${Config.hostName}/login`} >
+               <Link to="/login" >
             <button
                           type="submit"
                           className="btn btn-primary"

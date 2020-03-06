@@ -7,25 +7,25 @@ import Register from './components/register';
 import Config from './Config'
 import './App.css';
 import "bootstrap/dist/css/bootstrap.min.css";
-import { Route , Switch} from "react-router-dom";
+import { Route, Switch } from "react-router-dom";
 import Dashboard from './components/dashboard';
 
 export default class App extends Component {
   render() {
     return (
       <React.Fragment>
-          <Header/>
+        <Header />
         <br />
         <Switch>
-          <Route path={`${Config.hostName}/`} exact component={Welcome} />
-          <Route path={`${Config.hostName}/register`} component={Register} />
-          <Route path={`${Config.hostName}/login`} component={Login} /> 
-          <Route path={`${Config.hostName}/dashboard`} component={Dashboard} />        
+          <Route path={`/`} exact component={Welcome} />
+          <Route path={`/register`} component={Register} />
+          <Route path={`/login`} component={Login} />
+          <Route path={`/dashboard`} component={Dashboard} />
         </Switch>
         <br />
         <Footer />
       </React.Fragment>
-     );
+    );
   }
 }
 

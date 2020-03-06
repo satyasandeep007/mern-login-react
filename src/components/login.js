@@ -18,7 +18,7 @@ export default class login extends Component {
     event.preventDefault();
     const email = this.refs.email.value;
     const password = this.refs.password.value;
-    axios.post('http://localhost:8000/login', { email, password })
+    axios.post(`${Config.hostName}/login`, { email, password })
       .then(res => {
         if (res.data.user) {
           this.setState({

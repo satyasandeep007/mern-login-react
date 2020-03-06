@@ -4,6 +4,7 @@ import Footer from "./components/footer";
 import Welcome from './components/welcome';
 import Login from './components/login';
 import Register from './components/register';
+import Config from '../Config'
 import './App.css';
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Route , Switch} from "react-router-dom";
@@ -16,10 +17,10 @@ export default class App extends Component {
           <Header/>
         <br />
         <Switch>
-          <Route path=`${Config.hostName}/` exact component={Welcome} />
-          <Route path=`${Config.hostName}/register` component={Register} />
-          <Route path=`${Config.hostName}/login` component={Login} /> 
-          <Route path=`${Config.hostName}/dashboard` component={Dashboard} />        
+          <Route path={`${Config.hostName}/`} exact component={Welcome} />
+          <Route path={`${Config.hostName}/register`} component={Register} />
+          <Route path={`${Config.hostName}/login`} component={Login} /> 
+          <Route path={`${Config.hostName}/dashboard`} component={Dashboard} />        
         </Switch>
         <br />
         <Footer />

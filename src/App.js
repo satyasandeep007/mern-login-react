@@ -16,10 +16,10 @@ export default class App extends Component {
           <Header/>
         <br />
         <Switch>
-          <Route path="/" exact component={Welcome} />
-          <Route path="/register" component={Register} />
-          <Route path="/login" component={Login} /> 
-          <Route path='/dashboard' component={Dashboard} />        
+          <Route path=`${Config.hostName}/` exact component={Welcome} />
+          <Route path=`${Config.hostName}/register` component={Register} />
+          <Route path=`${Config.hostName}/login` component={Login} /> 
+          <Route path=`${Config.hostName}/dashboard` component={Dashboard} />        
         </Switch>
         <br />
         <Footer />

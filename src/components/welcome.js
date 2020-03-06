@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Config from '../Config'
 
 export default class welcome extends Component {
   render() {
@@ -7,8 +8,8 @@ export default class welcome extends Component {
         <div className="col-md-6 m-auto">
           <div className="card card-body text-center">
             <p>Create an account or login</p>
-            <a href="/register" className="btn btn-primary btn-block mb-2" >Register </a>
-            <a href="/login" className="btn btn-secondary btn-block">Login</a>
+            <a href=`${Config.hostName}/register` className="btn btn-primary btn-block mb-2" >Register </a>
+            <a href=`${Config.hostName}/login` className="btn btn-secondary btn-block">Login</a>
           </div>
         </div>
       </div>

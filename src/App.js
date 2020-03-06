@@ -4,7 +4,7 @@ import Footer from "./components/footer";
 import Welcome from './components/welcome';
 import Login from './components/login';
 import Register from './components/register';
-import Config from '../Config'
+import Config from './Config'
 import './App.css';
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Route , Switch} from "react-router-dom";
